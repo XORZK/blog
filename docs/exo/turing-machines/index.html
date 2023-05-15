@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Turing Machines </title>
+		<link rel="stylesheet" href="/src/css/main.css">
+	</head>
+	<body>
+		<div><div class="header">
+	<a href="/">xzk</a>
+	<a href="/exo">exo</a>
+</div>
+ </div>
+		<script>
+			MathJax = {
+				tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+				svg: {fontCache: 'global'}
+			};
+		</script>
+		<script id="MathJax-script" async src="/src/js/tex-svg.js"></script>
+
+		<main>
+			<h1> Turing Machines </h1>
+			<p>Turing machines are a model of computation that manipulates symbols on an infinitely long strip of tape according to a table of rules. Despite the model’s simplicity, it’s been proven to be able to implement any computer algorithm.</p>
+
+<p>The Turing machine has 4 main components:</p>
+<ul>
+  <li>An infinitely long strip of memory, split into cells, which hold a singular symbol from the alphabet of the machine.</li>
+  <li>A read/write head which is positioned over one of these cells.</li>
+  <li>A state register, which stores the current state of the machine.</li>
+  <li>A finite table of instructions:
+    <ul>
+      <li>This table operates on the current of the state of the machine (\(q_i\)) and the symbol read from the tape (\(a_j\)).</li>
+      <li>Using these states, \(q_i\) and \(a_j\), the machine can:
+        <ul>
+          <li>Erase or write a new symbol to the current cell.</li>
+          <li>Move the head one cell to the left or right (denoted as \(L\), \(R\), or \(N\) [neutral]).</li>
+          <li>Change states (\(q_i\) becomes \(q_{i_1}\)).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>For a system to be denoted as Turing complete, it must be able to simulate a Turing machine, which, by definition, means that it’s theoretically capable of expressing any task definable by an algorithm, ignoring the limitations of finite memory. For example, the card game, “Magic: the Gathering” is Turing complete. Crazy, right?</p>
+
+<h2 id="formal-definition">Formal Definition</h2>
+
+<p>A Turing machine can be formally defined as a 7-tuple \(\langle Q, \Gamma, b, \Sigma, \delta, q_{0}, F\rangle\) where:</p>
+<ul>
+  <li>\(Q\) is a finite, non-empty set of states.</li>
+  <li>\(\Gamma\) is a finite, non-empty set of alphabet symbols.</li>
+  <li>\(b \in \Gamma\) is the blank symbol. At any time, a Turing machine has an infinite amount of \(b\) on the tape.</li>
+  <li>\(\Sigma \in \Gamma \setminus \{b\}\) is the set of input symbols.</li>
+  <li>\(\delta\) is a partial function known as the transition function. It defines the behavior of the Turing machine given a symbol and state.</li>
+  <li>\(q_0 \in Q\) is the initial state.</li>
+  <li>\(F \in Q\) is the set of accepting states. If the Turing machine eventually reaches state \(F\), it’s said to have accepted the initial tape contents.</li>
+</ul>
+ 
+		</main>
+	</body>
+</html>

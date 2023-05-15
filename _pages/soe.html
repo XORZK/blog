@@ -1,0 +1,43 @@
+---
+title: SOE Solver
+layout: default
+permalink: /soe/
+---
+
+<style>
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.matrix {
+  padding-right: 1em;
+}
+.matrix input {
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+}
+</style>
+
+<form id="cform" name="cform">
+  <b># of equations:</b>
+  <input type="number" id="count" name="count" min="2"></input>
+</form>
+
+<br><br>
+
+<div style="display: flex">
+  <form id="matrix" name="matrix" class="matrix"></form>
+  <form id="variables" name="variables" class="matrix"></form>
+  <form id="output" name="output" class="matrix"></form>
+  <form id="solution" name="solution" class="matrix"></form>
+</div>
+
+<br>
+<button id="solve">Solve</button>
+
+<script src="/src/js/demos/matrix.js"></script>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Functions </title>
+		<link rel="stylesheet" href="/src/css/main.css">
+	</head>
+	<body>
+		<div><div class="header">
+	<a href="/">xzk</a>
+	<a href="/exo">exo</a>
+</div>
+ </div>
+		<script>
+			MathJax = {
+				tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+				svg: {fontCache: 'global'}
+			};
+		</script>
+		<script id="MathJax-script" async src="/src/js/tex-svg.js"></script>
+
+		<main>
+			<h1> Functions </h1>
+			<h2 id="domain-and-range">Domain and Range</h2>
+
+<blockquote>
+  <p><strong>Domain:</strong> the domain of a function, $f$, is the set of all valid inputs to $f$.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Range:</strong> the range of a function, $f$, is the set of corresponding outputs to each value in the domain of $f$.</p>
+</blockquote>
+
+<p>A function, $f$, relates each element from the domain (set of inputs) to an element from the range (set of outputs).</p>
+
+<center>
+$$f(D_f) = R_f$$
+</center>
+
+<h2 id="even-and-odd-functions">Even and Odd Functions</h2>
+
+<blockquote>
+  <p><strong>Odd:</strong> A function, $f$, is odd if $\forall x \in D_f$, $-f(x) = f(-x)$.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Even:</strong> Likewise, a function, $f$, is even if $\forall x \in D_f$, $f(x) = f(-x)$.</p>
+</blockquote>
+
+<h3 id="properties-of-even--odd-functions">Properties of Even &amp; Odd Functions</h3>
+
+<h4 id="odd">Odd</h4>
+<ul>
+  <li>Symmetric about the origin.</li>
+  <li>If $f(x)$ is a polynomial, and $f(x)$ is odd:
+    <ul>
+      <li>All terms in $f(x)$ are raised to an odd degree</li>
+      <li>Unless $f(x) = 0$. $f(x)=0$ is a function that’s both even and odd.</li>
+      <li>Proof:</li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+
+$f(x)$ (or any polynomial) can be generalized by the following summation, where $n$ is the degree of $f(x)$ :
+
+$$f(x) = \sum_{i=0}^{n} a_ix^{i}$$
+
+Assuming that the above statement is true, $\forall i$ such that $i \equiv 0 \mod (2)$, $a_i=0$, then:
+
+$$f(-x) = \sum_{i=0}^{n} -a_ix^{i} = -\sum_{i=0}^{n} a_ix^{i} = -f(x) $$
+
+</center>
+
+<h4 id="even">Even</h4>
+<ul>
+  <li>Symmetric about the y-axis.</li>
+  <li>If $f(x)$ is a polynomial, and $f(x)$ is even:
+    <ul>
+      <li>All term in $f(x)$ are raised to an even degree</li>
+    </ul>
+  </li>
+  <li>Proof: the statement can be proved in a similar fashion to the odd proof, which lies predominantly in restating $f(x)$ as a summation.</li>
+</ul>
+
+<h2 id="inverses">Inverses</h2>
+<ul>
+  <li><strong>One to one</strong>: if a function, $f$, yields a unique output per unique input, the function is said to be one to one.</li>
+  <li>If a function, $f$, has a graph that is strictly increasing/decreasing, it’s a one to one function.</li>
+  <li>If $f$ is a function with domain $D_f$ and range $R_f$, it’s inverse, $f^{-1}$, has a domain of $R_f$ and a range of $D_f$.</li>
+  <li>$f^{-1}(x)=y \leftrightarrow f(y)=x$</li>
+  <li>$f$ is symmetric to $f^{-1}$ with respect to $y=x$</li>
+</ul>
+
+<p>To find the inverse of a function, swap the $x$ and $y$ values.</p>
+
+<h2 id="combination-of-functions">Combination of Functions</h2>
+
+<p>Given two functions, $f$ and $g$, that have the same domain $D$, these functions may be combined to yield their sum, difference, product, and quotient.</p>
+<ul>
+  <li><strong>Sum:</strong> $f(x)+g(x)$ = $(f+g)(x)$</li>
+  <li><strong>Difference:</strong> $f(x)-g(x)$ = $(f-g)(x)$</li>
+  <li><strong>Product:</strong> $f(g)g(x)$ = $(fg)(x)$</li>
+  <li><strong>Quotient:</strong> $\dfrac{f(x)}{g(x)}$ = $(\dfrac{f}{g})(x)$, granted that $g(x) \ne 0$</li>
+</ul>
+
+<h2 id="special-functions">Special Functions</h2>
+
+<ul>
+  <li><strong>Absolute Value Function:</strong> $f(x) = \lvert x \rvert$
+    <ul>
+      <li>Defined as: \(f(x)\)=
+{\begin{array}{lr}x, &amp; \text{if } x \geq 0 \\  -x &amp; \text{if } x \lt 0 \end{array}}</li>
+      <li>Returns the magnitude of $x$.</li>
+    </ul>
+  </li>
+  <li><strong>Greatest Integer:</strong> $f(x)=\lfloor x \rfloor$.
+    <ul>
+      <li>Which returns the largest integer $N$, that satifies $N \leq x$.</li>
+    </ul>
+  </li>
+  <li><strong>Rational Functions:</strong> $f(x)=\dfrac{g(x)}{h(x)}$, with $g(x)$ and $h(x)$ being polynomials.
+    <ul>
+      <li>$D_f = x \in \mathbb{R}, x \ne a$ where $h(a)=0$.</li>
+    </ul>
+  </li>
+  <li><strong>Trigonometric Functions:</strong> Functions of angles, such as $sin(x)$, $cos(x)$, $tan(x)$, their reciprocals, and their hyperbolic counterparts.
+    <ul>
+      <li>Trigonometric functions are periodic (meaning that they repeat after an interval of time, $p$).</li>
+      <li>A function, $f(x)$, is periodic if, for all $x \in D_f$, there exists (at least) one value, $p$, such that $f(x+p) = f(x)$.</li>
+      <li>The smallest value, $p$, that adheres to the preceding rule, is known as the period of the function.
+        <ul>
+          <li>$sin(x)$, $cos(x)$, $csc(x)$ and $sec(x)$ all have periods of $2\pi$, whereas $tan(x)$ and $cot(x)$ have periods of $\pi$.</li>
+        </ul>
+      </li>
+      <li>If $f(x)$ has an amplitude of $a$, and period of $p$, then $kf(bx)$ has an amplitude of $ka$ and period of $\dfrac{p}{b}$.</li>
+      <li>Amplitude is found by the equation: $\dfrac{a-b}{2}$ where $a$ is the maximum value of $f(x)$ and $b$ is the minimum value of $f(x)$.</li>
+      <li>To graph the inverse of a trigonometric function, it’s domain must first be restricted such that the function is one to one.</li>
+    </ul>
+  </li>
+  <li><strong>Exponential/Logarithmic Functions:</strong>
+    <ul>
+      <li>Exponential: Functions of the form $ka^x$ for $a, k \in \mathbb{R}$, $a \geq 0$ and $a \ne 1$.</li>
+      <li>The function $f(x) = a^x$ has the domain: $D_f: x \in \mathbb{R}$ and range: $R_f: {y \in \mathbb{R}, y &gt; 0}$.</li>
+      <li>Logarithmic: Functions of the form $k\log_a{x}$ for $a, k \in \mathbb{R}$, $a \geq 0$ and $a \ne 1$.</li>
+      <li>The function $f(x) = \log_{a}{x}$ has the domain: $D_f: x \in \mathbb{R}, x \ge 0$, and range: $R_f: {y \in \mathbb{R}}$a.</li>
+    </ul>
+  </li>
+  <li><strong>Polynomial Functions:</strong> Functions that involve non-negative, integer powers and rational coefficients.
+    <ul>
+      <li>Polynomials can be written in the form: $f(x)=a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}…a_1x+a_0$.</li>
+      <li>The degree of the polynomial, in this context, is $n$.</li>
+      <li>All polynomials can be written as a summation: $f(x) = \sum_{i=0}^{n}a_ix^i$, where $n$ is the degree of $f(x)$.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="basic-exponentiallogarithmic-identities">(Basic) Exponential/Logarithmic Identities</h3>
+<ul>
+  <li>$a^0 = 1$, $a^1=a$, $a^na^m = a^{n+m}$, $a^na^{-m} = \dfrac{a^n}{a^m} = a^{n-m}$, $a^{m^n} = a^{mn}$</li>
+  <li>$\log_{a}{1} = 0$, $\log_{a}{a} = 1$, $\log_{a}{a^n} = n$, $\log_{a}{n} + \log_{a}{m} = \log_{a}{nm}$, $\log_{a}{n}-\log_{a}{m}=\log_{a}{\dfrac{n}{m}}$, $n\log_{a}{m} = \log_{a}{m^n}$</li>
+</ul>
+
+<h2 id="parametrically-defined-functions">Parametrically Defined Functions</h2>
+
+<p>Parametrically defined functions are created when points $(x,y)$ are defined as functions of a third variable, most often $t$.</p>
+
+<p>For example, $x=f(t)$, and $y=g(t)$ are parametrically defined functions with parameter, $t$. To graph a parametrically defined function on the Cartesian Plane, it’s generally wise to devise a relationsihp between the functions of $x$ and $y$ (in this case, $f(t)$ and $g(t)$.)</p>
+
+<p><strong>Ex:</strong> Find the equation of $x=4sin(t)$ and $y=5cos(t)$ in terms of $x$ and $y$.</p>
+
+<p>If $x = 4sin(t)$ and $y=5cos(t)$, then, $\dfrac{x}{4}$ = $sin(t)$ and $\dfrac{y}{5}$ = $cos(t)$.</p>
+
+<p>Therefore, $(\dfrac{x}{4})^2+(\dfrac{y}{5})^2$ = $sin^2(x)+cos^2(x)$ = 1.</p>
+
+<p>The parametrically defined function, defined by $x=4sin(t)$ and $y=5cos(t)$ results in a graph of an ellipse.</p>
+
+<h3 id="using-parametrically-defined-functions-to-create-inverses">Using Parametrically Defined Functions to Create Inverses</h3>
+
+<p>If you have an initial parametrically defined function, defined as $x=f(t)$ and $y=g(t)$, the inverse of that function is equivalent to $x=g(t)$ and $y=f(t)$.</p>
+
+<p>Any function can be defined parametrically.</p>
+
+<h2 id="polar-functions">Polar Functions</h2>
+
+<p>Polar coordinates of the form $(r, \Theta)$ identify a point on the Cartesian Plane by specifying an angle $(\Theta)$, and the distance from the origin $(r)$.</p>
+
+<p>To convert the set of polar coordinates $(r_n, \Theta_n)$, into a set of points on the Cartesian Plane:</p>
+
+<p>\((x_n, y_n)\) = \((cos(\Theta_n)*r_n, sin(\Theta_n)*r_n)\)</p>
+
+<p><strong>Ex:</strong> Consider the polar function $r=2+4sin(\Theta)$</p>
+
+<p>a) For what value of $\Theta$ does the curve intersect the circle defined by $r=3$.</p>
+
+<p>\(r=2+4sin(\Theta)\) and \(r=3\)</p>
+
+\[3 = 2+4sin(\Theta)\]
+
+\[sin(\Theta) = \dfrac{1}{4}\]
+
+\[\Theta = sin^{-1}(\dfrac{1}{4})\]
+
+ 
+		</main>
+	</body>
+</html>

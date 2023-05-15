@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: normal;
+	font-display: swap;
+	src: url("./DejaVuSansMono.ttf");
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-display: swap;
+	src: url("./SourceCodePro.ttf");
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-display: swap;
+	src: url("./RobotoMono.ttf");
+}
+
+body {
+	font-family: 'DejaVu Sans Mono', 'Source Code Pro';
+  font-weight: 400;
+	font-size: 15px;
+  padding-left: 1.5em;
+}
+
+main {
+	max-width: 80em;
+	margin: auto;
+	padding-bottom: 1.5em;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+.header {
+	display: flex;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	color: #000000;
+	font-size: 1.5em;
+}
+
+.header a {
+	color: #000000;
+	padding-right: 1em;
+}
+
+main a {
+	color: #222222;
+}
+
+main a:hover {
+	font-weight: bold;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+blockquote p {
+  display: inline;
+}

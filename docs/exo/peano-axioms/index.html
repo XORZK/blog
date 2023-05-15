@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Peano Axioms </title>
+		<link rel="stylesheet" href="/src/css/main.css">
+	</head>
+	<body>
+		<div><div class="header">
+	<a href="/">xzk</a>
+	<a href="/exo">exo</a>
+</div>
+ </div>
+		<script>
+			MathJax = {
+				tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+				svg: {fontCache: 'global'}
+			};
+		</script>
+		<script id="MathJax-script" async src="/src/js/tex-svg.js"></script>
+
+		<main>
+			<h1> Peano Axioms </h1>
+			<p>The Peano axioms define the arithmetical properties of natural numbers ($\in \mathbb{N}$), serving to provide a rigorous foundation for the natural numbers.</p>
+
+<hr />
+
+<h2 id="notion-of-equality">Notion of Equality</h2>
+
+<center>
+1. $\forall x \in \mathbb{N}, x = x$ (reflexive equality) <br />
+2. $\forall x,y \in \mathbb{N}$ if $x = y$, then $y=x$ (symmetric equality) <br />
+3. $\forall x,y,z \in \mathbb{N}$ if $x=y$ and $y=z$, then $x=z$ (transitive equality)<br />
+4. $\forall a,b$ if $b \in \mathbb{N}$ and $a=b$, then $a \in \mathbb{N}$ ($\mathbb{N}$ is closed under equality) <br />
+</center>
+
+<h2 id="peano-axioms">Peano Axioms</h2>
+
+<p>Let $S(n)$ be the successor function for natural numbers, such that $S(n) = n+1$ (although the addition operator has not been yet defined).</p>
+
+<center>
+1. $0 \in \mathbb{N}$ <br />
+2. $\forall x$, if $x \in \mathbb{N}$, then $S(x) \in \mathbb{N}$.<br />
+3. $\forall x \in \mathbb{N}$, $S(x) \ne 0$.<br />
+4. $\forall x,y \in \mathbb{N}$, if $S(x) = S(y)$, then $x = y$. <br />
+5. If $V$ is an inductive set, then $N \subset V$
+</center>
+
+<p>By axiom #4, $S(x)$ is defined to be an injective function. Therefore, $\mathbb{N}$ must include ${0, S(0), S(S(0)), S(S(S(0)))…}$, which includes all the natural numbers that, in hindsight, are known to be in $\mathbb{N}$.</p>
+
+<p>For axiom #5, an inductive set ($V$), is a non-empty set which contains both $x$ and $S(x)$. Therefore, $0 \in V$, and if $x \in V$, then $S(x) \in V$.</p>
+
+<p>Therefore, by the preceding axioms:</p>
+
+\[N \subset \{1,2,3,...\}\]
+
+\[\{1,2,3,...\} \subset N\]
+
+\[\therefore N = \{1,2,3,4,5,...\}\]
+
+<p>Using these axioms, we can define mathematical operations such as addition and multiplication.</p>
+
+<h2 id="addition">Addition</h2>
+
+<ul>
+  <li>$\forall a \in \mathbb{N}, a+0 = a$</li>
+  <li>$\forall a, b \in \mathbb{N}, a + S(b) = S(a+b)$</li>
+</ul>
+
+<p>For example, when computing $1+1$:</p>
+
+\[1+1\]
+
+\[= 1+S(0)\]
+
+\[= S(1+0)\]
+
+\[= 2\]
+
+<p>Much like recursion, $\forall a \in \mathbb{N}, a+0 = a$ is the base case, and everything eventually decomposes to the base case.</p>
+
+\[f(x, y) = 
+
+\begin{cases}
+x, &amp; \text{if $y = 0$} \\ 
+y, &amp; \text{if $x = 0$} \\ 
+S(x + S(y-1)), &amp; \text{otherwise}
+\end{cases}\]
+
+<h2 id="multiplication">Multiplication</h2>
+
+<p>Multiplication is essentially repeated addition.</p>
+
+<h2 id="bibliography">Bibliography</h2>
+
+<ul>
+  <li><a href="http://www2.hawaii.edu/~robertop/Courses/TMP/7_Peano_Axioms.pdf">The Peano Axioms</a></li>
+</ul>
+ 
+		</main>
+	</body>
+</html>

@@ -1,0 +1,140 @@
+{
+  "main": {
+    "id": "5165dfc984d392fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6925e1a60c2d77b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "derivative.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c94860ac8a0c678e",
+    "type": "split",
+    "children": [
+      {
+        "id": "acb4bfda985db2a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a63a25dcdb438c82",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b8126e49fb602734",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2723535bf8e665c9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 166
+  },
+  "right": {
+    "id": "1519953be9f38a10",
+    "type": "split",
+    "children": [
+      {
+        "id": "9821a31ed2e01e70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f5483297eeed17f4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "derivative.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d3e2bd92a4798eeb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "derivative.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a94d2c8061b35551",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "12af3792dda2443b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "derivative.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e6925e1a60c2d77b",
+  "lastOpenFiles": [
+    "kinematic-definitions.md",
+    "test.md",
+    "derivative.md",
+    "2022-10-06.md",
+    "derivative.html.md",
+    "x0.md"
+  ]
+}
