@@ -1,0 +1,11 @@
+---
+title: notes
+layout: default
+permalink: /notes/
+---
+
+{% assign notes = site.notes | sort: "title" %}
+
+{% for post in notes %}
+<p><b><a href="{{ post.url }}">{{ post.title }}</a></b><br>{{ post.description }}<p>
+{% endfor %}

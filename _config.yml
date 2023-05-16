@@ -18,10 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: xzk
+title: xorzk 
 email: 2409hw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  fun with numbers (predominantly 0s and 1s). 
 # Build settings
 theme: minima
 plugins:
@@ -51,7 +50,7 @@ include:
   - _pages/
 
 collections:
-  exo:
+  notes:
     output: true
 
 permalink: /:collection/:path/
